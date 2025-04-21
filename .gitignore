@@ -1,0 +1,36 @@
+# Node.js dependencies
+/node_modules/
+
+# VS Code settings
+.vscode/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Log files
+*.log
+
+# Local environment files
+.env
+
+# Backup files from editors
+*.bak
+*.swp
+*.swo
+*~
+
+# Build output (if using build tools like Gulp, Webpack, etc.)
+dist/
+build/
+
+# Package manager files (if you are using npm or yarn)
+yarn-debug.log*
+yarn-error.log*
+npm-debug.log*
+
+# CSS preprocessors (if you're using SASS or LESS)
+.sass-cache/
+
+# Front-end framework builds
+public/
