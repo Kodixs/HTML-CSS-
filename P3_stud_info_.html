@@ -9,14 +9,15 @@
 
     <table border="2" cellpadding="10" cellspacing="10">
         <tr>
-            <th>Student ID</th>
-            <th>Name
-                <th>First Name</th>
-                <th>Last Name</th>
-            </th>
-            <th>age</th>
-            <th>Grade</th>
-            <th>Email</th>
+            <th rowspan="2" >Student ID</th> <!--Here row and col span means expansion for row and columns and the number 2 denoates how many row or columns to occupy-->
+            <th colspan="2" >Name</th>
+            <th rowspan="2" >age</th>
+            <th rowspan="2" >Grade</th>
+            <th rowspan="2" >Email</th>
+        </tr>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
         </tr>
 
         <tr>
@@ -24,7 +25,7 @@
             <td>alice</td>
             <td>Johnson</td>
             <td>20</td>
-            <td>a</td>
+            <td>A</td>
             <td>alice@example.com</td>
         </tr>
 
@@ -38,31 +39,29 @@
         </tr>
 
         <tr>
-            <td>3
-                          
-                    <td>David</td>
-                    <td>Wilson</td>
-                    <td>23</td>
-                    <td>B</td>
-                    <td>david@example.com</td>
+            <td rowspan="2">3</td>
+            <td>Charlie</td>
+            <td>Brown</td>
+            <td>21</td>
+            <td>A</td>
+            <td>charlie@example.com</td>
                     
-
+         </tr>
+           <tr>
+            
                     <td>David</td>
                     <td>Wilson</td>
                     <td>23</td>
                     <td>B</td>
                     <td>david@example.com</td>
-                
-            </td>
-
-        </tr>
+           </tr>
 
         <tr>
             <td>4</td>
             <td>Eva</td>
             <td>adams</td>
             <td>19</td>
-            <td>a</td>
+            <td>A</td>
             <td>eva@example.com</td>
         </tr>
     </table>
