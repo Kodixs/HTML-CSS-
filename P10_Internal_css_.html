@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <title>
+        without css
+    </title>
+    
+    <style>
+        h2 
+        {
+            background-color: blue;
+        }
+
+        a[href="http://www.google.com"] 
+        {
+            background-color: red;
+            
+        }
+
+        /* from starting */
+        a[href^="http"]{
+            background-color: yellowgreen;
+
+        }
+
+                /* from any */
+        a[href*="tf"]{
+            background-color: violet;
+
+        }
+
+
+                /* from last */
+        a[href$="oo"]{
+            background-color: orange;
+
+        }
+        
+    </style>
+
+</head>
+
+<body>
+
+    <h2>HTML Formating Tags</h2>
+    <a href="http://www.google.com">Google</a>
+    <a href="www.yahoo">Yahoo</a>
+    <a href="www.tfhy.org">ho</a>
+
+  
+   
+    
+
+</body>
+
+
+
+</html>

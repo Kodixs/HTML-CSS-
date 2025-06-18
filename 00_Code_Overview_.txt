@@ -1,9 +1,18 @@
-P1. Intro to HTML
-P2. Form in HTML
-P3. Crete student informtion form
-P4. Media adding
-P5. div use
-P6. form HW
-P7. Book 
-P8. Text formating without css
-P9
+P1.  Intro to HTML
+P2.  Form in HTML
+P3.  Crete student informtion form
+P4.  Media adding
+P5.  div use
+P6.  Form HW
+P7.  Book 
+P8.  Text formating without css
+P9.  Inline CSS
+P10. Internal CSS
+P11. External CSS
+
+
+ There are mainly three ways to apply CSS in HTML -internal,external,inline 
+
+ Selector types in HTML for CSS -:
+ID(.),class,element(#),attribute,
+from starting (^),from any (*),from last ($)
