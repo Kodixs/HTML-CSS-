@@ -9,6 +9,12 @@ P8.  Text formating without css
 P9.  Inline CSS
 P10. Internal CSS
 P11. External CSS
+P12. Img with alt
+P13. Table with caption,header and footer
+P14. Change bullet symbol in list
+P15. Definition list
+P16. Meta description for SEO
+P17. <form></form> in HTML
 
 
  There are mainly three ways to apply CSS in HTML -internal,external,inline 
