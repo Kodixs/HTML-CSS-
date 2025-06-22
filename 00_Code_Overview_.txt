@@ -22,3 +22,7 @@ P17. <form></form> in HTML
  Selector types in HTML for CSS -:
 ID(.),class,element(#),attribute,
 from starting (^),from any (*),from last ($)
+
+
+ . means class,
+ # means id
