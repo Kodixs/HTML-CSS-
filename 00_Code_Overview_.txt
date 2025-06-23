@@ -15,6 +15,7 @@ P14. Change bullet symbol in list
 P15. Definition list
 P16. Meta description for SEO
 P17. <form></form> in HTML
+P18. svg in HTML ex-circle, svg file can be also made as separate like CSS file
 
 
  There are mainly three ways to apply CSS in HTML -internal,external,inline 
