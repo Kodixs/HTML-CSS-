@@ -28,6 +28,7 @@ P20. Selector types in CSS(Cascading Style Sheets)
   
 P21. Box model in HTML
 P22. Text design and decoration
+P22. Colors
 
 
  . means class,
