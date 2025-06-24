@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selector</title>
+
+    <style>
+        /* Element selector */
+        div{
+            background-color: lightcoral;
+        }
+
+        /* Class selector */
+        .red {
+            background-color: red;
+         }
+        
+        /* ID selector */
+        #blow {
+            background-color: blue;
+          }
+
+        /*child selector */
+        #blow > p {
+            background-color: yellow;
+        }
+
+        /* descendant selector */
+        #blow p {
+            background-color: green;
+        }
+
+        /*universal selector */
+        * {
+            height: 100px;
+            width: 100px;
+        }
+
+        /* pseudo selector */
+        a:visited {
+            color: orangered
+        }
+
+        a:link{
+            color: rgb(1, 1, 11);
+        }
+
+        a:active {
+           background-color: blue;
+        }
+
+        a:hover {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div >It's me First div </div>
+    <div class="red" >It's me Second div with class as red</div>
+    <div id="blow">Ma third div with id as blow
+        <p>Ma para in the div</p>
+        <article>
+            <p>Ma article in the div</p>
+        </article>
+
+        <a   href="https://www.google.com/">A link to google</a>
+        <a   href="https://in.search.yahoo.com/?fr2=inr">A link to Yuhoo</a>
+        
+    </div>
+    
+</body>
+</html>

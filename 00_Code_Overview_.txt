@@ -16,13 +16,18 @@ P15. Definition list
 P16. Meta description for SEO
 P17. <form></form> in HTML
 P18. svg in HTML ex-circle, svg file can be also made as separate like CSS file
+P19. Semantic tags in HTML
 
+  CSS
+P20. Selector types in CSS(Cascading Style Sheets)
+     There are mainly three ways to apply CSS in HTML -internal,external,inline 
 
- There are mainly three ways to apply CSS in HTML -internal,external,inline 
-
- Selector types in HTML for CSS -:
-ID(.),class,element(#),attribute,
-from starting (^),from any (*),from last ($)
+     Selector types in HTML for CSS -:
+     ID(.),class,element(#),attribute,
+     from starting (^),from any (*),from last ($),child,pseudo,descendant
+  
+P21. Box model in HTML
+P22. Text design and decoration
 
 
  . means class,
