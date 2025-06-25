@@ -30,6 +30,23 @@ P21. Box model in HTML
 P22. Text design and decoration
 P22. Colors
 P23. Exercise 1
+P24. CSS sizing units
+     vw(view port width)- automatically adjust the screen size as per device
+     vh(view port height)- for height of vw
+     em-it emphasize that times of previous font size for the actively applied element
+     rem(root)- increase that time size of font of root for active
+     vmin - for vh in phone and vw in computer
+     vmax - 
+
+P25. CSS display property
+P26. CSS shadow and outlines
+     box-shadow:h-offset v-offset blur spread color inset;
+      
+      h and v manages its vertical and horizontal position
+      inset for shadow inner
+
+
+
 
 
  . means class,
