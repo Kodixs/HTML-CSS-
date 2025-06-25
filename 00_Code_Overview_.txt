@@ -40,8 +40,8 @@ P24. CSS sizing units
 
 P25. CSS display property
 P26. CSS shadow and outlines
-     box-shadow:h-offset v-offset blur spread color inset;
-      
+     -> box-shadow:h-offset v-offset blur spread color inset;
+     -> outline: width style color;
       h and v manages its vertical and horizontal position
       inset for shadow inner
 
