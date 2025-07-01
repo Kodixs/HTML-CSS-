@@ -45,6 +45,10 @@ P26. CSS shadow and outlines
       h and v manages its vertical and horizontal position
       inset for shadow inner
 
+P27. CSS List styling
+P28. CSS overflow property
+P29. CSS position property
+P30. exercise - card
 
 
 
