@@ -1,37 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <title>Example Card</title>
-    <style>
-        img {
-            width: 110%;
-            height: 310px;
-        }
-    </style>
-    </head>
+  <meta charset="UTF-8">
+  <title>Card UI - Lago di Braies</title>
+  <style>
+    body {
+      background-color: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
 
+    .card {
+      background-color: white;
+      border-radius: 15px;
+      width: 350px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+      overflow: hidden;
+      text-align: left;
+      padding-bottom: 20px;
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .tags {
+      display: flex;
+      gap: 10px;
+      padding: 15px 20px 0;
+    }
+
+    .tags span {
+      font-size: 14px;
+      background-color: #f0f0f0;
+      color: #333;
+      padding: 5px 10px;
+      border-radius: 10px;
+    }
+
+    .card h2 {
+      font-size: 22px;
+      margin: 15px 20px 5px;
+      color: #222;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #555;
+      margin: 0 20px;
+      line-height: 1.5;
+    }
+
+    .btn-box {
+      text-align: center;
+      margin-top: 15px;
+    }
+
+    .btn-box button {
+      background-color: #e2e8f0;
+      color: #333;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    .btn-box button:hover {
+      background-color: #1472ff;
+    }
+  </style>
+</head>
 <body>
- <div>
-    <div>
-        <img src="https://images.pexels.com/photos/247600/pexels-photo-247600.jpeg" alt="Bhopal Lake">
-
-        <span>Nature</span>
-        <span>Lakes</span>
-        <div>
-            <h1>Welcome to Lake </h1>
-            <p>Bhopal, often called the City of Lakes, is the capital of Madhya Pradesh, India. The city's name is derived from the Upper Lake (Bhojtal), which was constructed in the 11th century by Raja Bhoj. Bhopal is known for its picturesque lakes, including the Upper Lake and Lower Lake, which are not only scenic but also serve as a vital source of drinking water for the city. The city boasts a rich history, with historical sites like the  
-
-
-
-
-</p>
-
-            <div><button>Read More</button></div>
-        </div>
+  <div class="card">
+    <img src="https://images.pexels.com/photos/247600/pexels-photo-247600.jpeg" alt="Lago di Braies">
+    
+    <div class="tags">
+      <span>Nature</span>
+      <span>Lake</span>
     </div>
- </div>
-</body>
 
+    <h2>Lago di Braies</h2>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+      Consectetur sodales morbi dignissim sed diam pharetra vitae ipsum odio.
+    </p>
+
+    <div class="btn-box">
+      <button>Read More</button>
+    </div>
+  </div>
+</body>
 </html>

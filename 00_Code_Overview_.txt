@@ -49,7 +49,18 @@ P27. CSS List styling
 P28. CSS overflow property
 P29. CSS position property
 P30. exercise - card
-
+P31. CSS varibles
+P32. CSS media query
+P33. Ex 4 - multi color website with css variables
+P34. CSS float and clear
+P35. CSS other Selectors
+P36. Design web like layout
+P37. What is flex box in css
+P38. What is css grid
+P39. Css grid part 2
+P40. css grid part 3
+P41. Ex 5 -nav bar of website using flexbox
+P42. CSS tranforms
 
 
 
