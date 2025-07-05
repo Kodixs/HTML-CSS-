@@ -1,0 +1,123 @@
+P1. Create a full HTML page for a "Student Weekly Attendance Sheet" using:
+    A heading
+    A table with days and subjects
+    Use border, cellpadding, and cellspacing
+    
+P2. Inside an ordered list, add a movie list.
+Under one movie, add a nested ordered list of its parts (T1, T2…)
+Make sure to label the nested list clearly
+
+P3. Create an admission form with at least 6 fields:
+Text, email, number, dropdown, file upload, and textarea
+
+Also add submit button (only HTML)
+
+P4. Create a page with all heading tags <h1> to <h6>
+Add a paragraph below each heading explaining its ideal use case
+
+P5. Build a navigation section using anchor tags:
+One link to Google (new tab)
+
+One internal page link like /home.html
+
+One fake link using # and tooltip using title attribute
+
+P6. Create a fieldset-based form for:
+User details (Name, Email, Gender)
+
+Job details (dropdown + text input)
+
+Use <legend> to label the form
+
+P7. Create a form with two radio buttons labeled "Dark Mode" and "Light Mode"
+Only one should be selectable
+
+Group them properly using name attribute
+
+P8. Make a bullet list (unordered list) of:
+5 programming languages you want to master
+
+Under one, nest a list of frameworks (e.g., HTML → Bootstrap)
+
+P9. Create a Movie Table with columns:
+Movie Name, Release Year, Genre, Rating
+
+Use <th>, <tr>, <td> and add at least 3 rows
+
+P10. Create a form with validation-ready fields (only HTML):
+Text input for name (with placeholder)
+
+Email input
+
+Number input (age, with min & max)
+
+Use required on at least one input
+
+P11. Create a multi-line input field using <textarea>:
+Label it "Your Feedback"
+
+Pre-fill it with some text
+
+Make sure it’s inside a form
+
+P12. Create a dropdown (<select>) labeled "Choose Your Country"
+Add at least 5 countries
+
+One should be pre-selected using selected
+
+P13. Create a form section that includes:
+A file upload field
+
+A text field with label using for and id
+
+A dropdown field with label using for and id
+
+P14. Add two anchor tags that:
+Open in a new tab
+
+One should link to your GitHub (or use #)
+
+Another should download a dummy file (use download attribute)
+
+P15. Create a table with:
+Row and column merged using rowspan and colspan
+
+Example: Create a “Subject” and “Marks” layout
+
+P16. Create an address form with:
+Country (dropdown)
+
+State (dropdown)
+
+City (text input)
+
+Pincode (number input)
+
+P17. Use semantic structure:
+Add a <main>, <header>, <footer>, and <section>
+
+Place any content (like forms or tables) inside appropriate tags
+
+P18. Create a FAQ-like section using only headings and paragraphs:
+Use <h3> for each question
+
+Use <p> for each answer
+
+Add horizontal lines (<hr>) between each Q&A
+
+P19. Create a profile form using:
+Name, Email
+
+Gender (radio)
+
+Bio (textarea)
+
+Upload profile picture (file)
+
+City selection (dropdown)
+
+P20. Add 3 <br> tags in different places and explain:
+Why using too many <br> tags is discouraged in modern HTML
+
+How to achieve better layout using CSS (when learned)
+

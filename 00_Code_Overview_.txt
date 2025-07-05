@@ -51,16 +51,24 @@ P29. CSS position property
 P30. exercise - card
 P31. CSS varibles
 P32. CSS media query
-P33. Ex 4 - multi color website with css variables
+P33. Ex 2 - multi color website with css variables
 P34. CSS float and clear
 P35. CSS other Selectors
 P36. Design web like layout
 P37. What is flex box in css
 P38. What is css grid
 P39. Css grid part 2
-P40. css grid part 3
-P41. Ex 5 -nav bar of website using flexbox
+P40. Css grid part 3
+P41. Ex 3 -nav bar of website using flexbox
 P42. CSS tranforms
+P43. More css tranforms
+P44. Ex-4 - Grid donwload 
+P45. Transition(animation type)
+P46. CSS Animation
+P47. Ex 5- Bounce animation
+P48. CSS object fit and cover
+P49. CSS filters
+P50. 
 
 
 
