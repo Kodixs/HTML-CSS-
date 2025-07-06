@@ -1,8 +1,21 @@
+Practice
+
 P1. Create a full HTML page for a "Student Weekly Attendance Sheet" using:
     A heading
     A table with days and subjects
     Use border, cellpadding, and cellspacing
-    
+
+P1a. Create a “Hospital Duty Roster” with:
+     Rows for each day of the week
+     Columns for Morning, Afternoon, Night shifts
+     Use rowspan to show a doctor doing continuous 3-day shifts
+
+P1b. Design a “Restaurant Menu Table” showing:
+     Categories (Starters, Main Course, Dessert)
+     Items with Price and Ingredients
+     Use colspan for headers
+
+Include a heading and border
 P2. Inside an ordered list, add a movie list.
 Under one movie, add a nested ordered list of its parts (T1, T2…)
 Make sure to label the nested list clearly
