@@ -1,2 +1,1 @@
-P1. Job Application Form
-P2. Parallax Website
+P1. Make responsive layout
