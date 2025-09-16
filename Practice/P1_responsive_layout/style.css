@@ -1,97 +1,78 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     background-color: #EBD6FB;
 }
 
-
-
-.container{
+/* container centered */
+.container {
     background-color: #EBD6FB;
-    width: 1200px;
-    height: 800px;
-    margin: 80px 60px;
+    max-width: 1200px;  /* never exceed 1200px */
+    width: 100%;        /* shrink on smaller screens */
+    margin: 40 auto;     /* center horizontally */
     padding: 20px;
-   
-    
 }
 
-
-.box{
-    width: 600px;
-    height: 200px;
-
-    
-    
-}
-
-.twobox{
+/* two-box rows */
+.twobox {
     display: flex;
-}
-
-.box1{
-    background-color:#E7CAFF ;
-
-    
-    
-    
-    
-}
-.box2{
-    background-color: #E3A7FF;
-
-}
-.box3{
-    background-color:#7E45A8 ;
-
-}
-.box4{
-    background-color:#AB47FB ;
-
-}
-.box5{
-    background-color:#9E38EF ;
-
-}
-.box6{
-    background-color: #7629B2;
-
-}
-.box7{
-    background-color:#340C53 ;
-
-}
-.box8{
-    background-color:#560E8D ;
-
-}
-
-/* Big screen media query */
-@media screen and (width > 1200px){
-    
-   .container {
-    margin: 80px auto;
-  }
+    flex-wrap: wrap;    /* allows stacking on small screens */
    
 }
 
-
-/* Medium screen media query */
-@media screen and (width < 1200px) and (width > 450px){
-    
-   .container {
-    margin: 40px 24px;
-  }
-   
+/* individual boxes */
+.box {
+    flex: 1;            /* equal width */
+    min-width: 200px;   /* don’t shrink too much */
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
 }
 
-@media screen and (width < 450px){
-       .container {
-    margin: 24px 16px;
-  }
+/* colors */
+.box1 { background-color: #E7CAFF; }
+.box2 { background-color: #E3A7FF; }
+.box3 { background-color: #7E45A8; }
+.box4 { background-color: #AB47FB; }
+.box5 { background-color: #9E38EF; }
+.box6 { background-color: #7629B2; }
+.box7 { background-color: #340C53; }
+.box8 { background-color: #560E8D; }
+
+/* Media Queries */
+
+/* Big screens (desktops larger than 1200px wide) 
+   → Add large top/bottom margins (80px) 
+   and center the container horizontally (auto). */
+@media screen and (min-width: 1201px) {
+    .container {
+        margin: 80px auto;
+    }
 }
-    
+
+/* Medium screens (tablets and small laptops: 451px–1200px) 
+   → Give the container smaller margins: 
+   40px top/bottom and 24px left/right. */
+@media screen and (min-width: 451px) and (max-width: 1200px) {
+    .container {
+        margin: 40px 24px;
+    }
+}
+
+/* Small screens (mobile phones up to 450px wide) 
+   → Use very compact margins: 
+   24px top/bottom and 16px left/right. */
+@media screen and (max-width: 450px) {
+    .container {
+        margin: 24px 16px;
+    }
+}
+
