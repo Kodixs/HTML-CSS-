@@ -1,1 +1,6 @@
+
+margin: top right bottom left;
+
 P1. Make responsive layout
+P2. Grid Layout
+P3. Responsive grid

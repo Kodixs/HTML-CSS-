@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #7ADFFF;
+}
+
+.container {
+
+    max-width: 1200px;
+    /* max-width - Sets the maximum width the element can have. The element can shrink if the screen is smaller, but will never exceed this value. */
+    min-height: 100vh;
+    /* take full screen height */
+    /* min-width - Sets the minimum width the element must have. It will shrink only until this value, then stop. */
+    margin: 52px auto;
+    padding: 0 16px;
+
+
+
+}
+
+
+
+.grid {
+    display: grid;
+    gap: 20px;
+    grid-template-areas:
+        /* col1 col2 col3 */
+        "box1 box1 box1 box3"
+        "box2 box2 box2 box3"
+        "box2 box2 box2 box3";
+
+}
+
+.box1 {
+    grid-area: box1;
+    background-color: #4F8EEC;
+
+}
+
+.box2 {
+    grid-area: box2;
+    background-color: #0A1E3C;
+
+}
+
+.box3 {
+    grid-area: box3;
+    background-color: #005C79;
+
+
+}
+
+
+
+@media screen and (min-width:450px) and (max-width:1200px) {
+    .grid {
+
+        gap: 16px;
+
+
+    }
+}
+
+
+
+@media screen and (max-width:450px) {
+    .container{
+        margin: 24px auto;
+    }
+    .grid {
+
+        gap: 16px;
+
+
+    }
+
+    .grid {
+        display: grid;
+        gap: 20px;
+        grid-template-areas:
+            /* col1 col2 col3 */
+            "box1"
+            "box1"
+            "box2"
+            "box2"
+            "box2"
+            "box2"
+            "box3"
+            "box3"
+            "box3";
+
+    }
+
+}
