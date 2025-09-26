@@ -1,6 +1,6 @@
 
 margin: top right bottom left;
-Flexbox➡️ One-dimensional (either a row or a column at a time)
+Flexbox➡️ One-dimensional (either a row or a column at a time), only works for its first childs 
 Grid➡️ Two-dimensional (rows and columns at the same time)
 
 P1. Make responsive layout
