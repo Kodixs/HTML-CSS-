@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    background-color: black;
+
+}
+
+body{
+    /* width: 100vw; Thinks will work under screen width like will center box horizontally */
+    height: 100vh; /*Thinks will work under screen height like will center box vertically */
+
+    display: grid;
+    place-items: center; /* This is used for grid only will center box vertically as vh above */
+}
+
+.box{
+   
+    width: 800px;
+    height: 100px;
+    background-color: rgb(245, 192, 255);
+    display: flex;
+    gap: 5px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /* justify-content: space-around; */
+    
+
+}
+
+.box div{
+    background-color: yellow;
+    width: 100px;
+    height: 100px;
+    display: grid;
+    place-items: center
+    ;
+}

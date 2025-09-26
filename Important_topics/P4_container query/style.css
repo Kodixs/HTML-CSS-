@@ -1,0 +1,100 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main Grid Container */
+.main_container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 1rem;
+    height: 100vh;
+    background-color: black;
+}
+
+/* Sections */
+.top_container {
+    width: 100%;
+    grid-column: 1 / 5;
+    grid-row: 1 / 3;
+    border: 2px solid white;
+}
+
+.left_container {
+    grid-column: 1 / 2;
+    grid-row: 3 / 7;
+    border: 2px solid white;
+}
+
+.right_container {
+    grid-column: 2 / 5;
+    grid-row: 3 / 7;
+    border: 2px solid white;
+}
+
+/* Card Container: enable container queries */
+.card_container {
+    height: 100%;
+    container-type: inline-size; /* important for container queries */
+}
+
+/* Cards Grid */
+.post_cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.5rem;
+    height: 100%;
+}
+
+/* Individual Cards */
+.cards {
+    height: 100%;
+    width: 100%;
+    background-color: #474747;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+/* --- Container Queries --- */
+
+/* When card container width is at least 600px */
+@container (min-width: 600px) {
+    .post_cards {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .cards {
+        font-size: 1.2rem;
+        background-color: #5a5a5a;
+    }
+}
+
+/* When card container width is at least 400px but less than 600px */
+@container (min-width: 400px) and (max-width: 599px) {
+    .post_cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cards {
+        font-size: 1rem;
+        background-color: #666666;
+    }
+}
+
+/* When card container width is less than 400px */
+@container (max-width: 399px) {
+    .post_cards {
+        grid-template-columns: 1fr;
+    }
+
+    .cards {
+        font-size: 0.9rem;
+        background-color: #777777;
+    }
+}

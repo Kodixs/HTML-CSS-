@@ -1,0 +1,12 @@
+justfiy-content = works horizontally
+align-items= works vertically
+
+vh = viewport height, not width.
+
+width: 100vh makes the body as wide as the viewport’s height, not the viewport’s width.
+
+
+P1. flexbox tutorial 
+P2. Grid tutorial
+P3. Css positioning property
+P4. Container Query
