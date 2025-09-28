@@ -1,0 +1,208 @@
+/* This is a root pseudo-class, used here to define global CSS variables. */
+:root {
+    --primary: white; /* Defines a variable for the primary color (white). */
+    --secondary: black; /* Defines a variable for the secondary color (black). */
+    --gap: 16px; /* Defines a variable for spacing between elements. */
+    --padding: 24px; /* Defines a variable for inner spacing within elements (I added this). */
+    --border-radius: 12px; /* Defines a variable for the roundness of corners. */
+}
+
+/* This is a universal selector that applies styles to ALL elements on the page. */
+* {
+    margin: 0; /* Removes the default outer spacing from all elements. */
+    padding: 0; /* Removes the default inner spacing from all elements. */
+    box-sizing: border-box; /* Changes the box model so padding and border are included in the element's total width and height. */
+}
+
+/* Styles applied to the <body> element. */
+body {
+    background-color: var(--primary); /* Sets the page background to our primary color (white). */
+    font-family: sans-serif; /* Sets the default font for the entire page. */
+    padding: var(--gap); /* Adds overall spacing around the entire page content. I changed this to use --gap. */
+}
+
+/* --- Main Layout Container --- */
+/* Styles for the main wrapper that holds both the left and right panels. */
+.layout-container {
+    display: flex; /* Enables Flexbox layout for its direct children. */
+    flex-direction: column; /* Stacks the panels vertically (this is our mobile-first default). */
+    gap: var(--gap); /* Sets the space between the panels. */
+    max-width: 1200px; /* Sets a maximum width for the layout on very large screens. */
+    margin: 0 auto; /* Centers the layout horizontally within the page. */
+}
+
+/* --- Left Panel (Header) --- */
+/* Styles for the left sidebar/header. */
+.left-panel {
+    background-color: var(--secondary); /* Sets the background to our secondary color (black). */
+    border-radius: var(--border-radius); /* Rounds the corners of the panel. */
+    padding: var(--padding); /* Adds inner spacing inside the panel. */
+    display: flex; /* Enables Flexbox for the elements inside this panel. */
+    flex-direction: column; /* Stacks the elements inside this panel vertically. */
+    gap: var(--gap); /* Sets the space between elements inside this panel. */
+}
+
+/* Styles for the top section of the left panel (avatar and search). */
+.profile-header {
+    display: flex; /* Enables Flexbox to place the avatar and search bar side-by-side. */
+    align-items: center; /* Vertically aligns the avatar and search bar to their center. */
+    gap: var(--gap); /* Sets the space between the avatar and the search bar. */
+}
+
+/* Styles for the circular avatar placeholder. */
+.avatar {
+    width: 60px; /* Sets a fixed width for the avatar. */
+    height: 60px; /* Sets a fixed height for the avatar, making it a perfect circle. */
+    background-color: var(--primary); /* Sets the avatar color to white. */
+    border-radius: 50%; /* Makes the element a perfect circle. */
+    flex-shrink: 0; /* Prevents the avatar from shrinking if the container is too small. */
+}
+
+/* Styles for the search bar placeholder. */
+.search-bar {
+    width: 100%; /* Allows the search bar to fill the remaining horizontal space. */
+    height: 60px; /* Sets a fixed height for the search bar. */
+    background-color: var(--primary); /* Sets the search bar color to white. */
+    border-radius: 30px; /* Gives the search bar rounded ends. */
+}
+
+/* Styles for the container holding the stat items. */
+.stats-container {
+    display: flex; /* Enables Flexbox for the stat items. */
+    flex-direction: column; /* Stacks the stat items vertically by default (for mobile). */
+    gap: var(--gap); /* Sets the space between each stat item. */
+}
+
+/* Styles for a single stat item (icon + text lines). */
+.stat-item {
+    display: flex; /* Enables Flexbox to place the icon and text lines side-by-side. */
+    gap: 10px; /* Sets the space between the icon and the text lines. */
+    align-items: center; /* Vertically aligns the icon and text lines. */
+}
+
+/* Styles for the square icon in a stat item. */
+.icon {
+    width: 48px; /* Sets a fixed width for the icon. */
+    height: 48px; /* Sets a fixed height for the icon, making it a square. */
+    background-color: var(--primary); /* Sets the icon color to white. */
+    flex-shrink: 0; /* Prevents the icon from shrinking. */
+}
+
+/* Styles for the container of the text lines. */
+.text-lines {
+    display: flex; /* Enables Flexbox for the lines. */
+    flex-direction: column; /* Stacks the text lines vertically. */
+    gap: 8px; /* Sets the space between each text line. */
+    width: 100%; /* Allows the text lines container to fill available space. */
+}
+
+/* Styles for a single placeholder text line. */
+.line {
+    height: 10px; /* Sets the thickness of the line. */
+    width: 100%; /* Makes the line fill its container by default. */
+    background-color: var(--primary); /* Sets the line color to white. */
+}
+
+/* --- Right Panel (Main Content) --- */
+/* Styles for the right main content panel. */
+.right-panel {
+    background-color: var(--secondary); /* Sets the background to black. */
+    border-radius: var(--border-radius); /* Rounds the corners. */
+    padding: var(--padding); /* Adds inner spacing. */
+    display: flex; /* Enables Flexbox for the content inside. */
+    flex-direction: column; /* Stacks the content vertically. */
+    gap: var(--gap); /* Sets space between the content elements. */
+}
+
+/* Styles for the header of the post (author info and actions). */
+.post-header {
+    display: flex; /* Enables Flexbox for its children. */
+    justify-content: space-between; /* Pushes the author info to the left and actions to the right. */
+    gap: var(--gap); /* Adds space between children if they wrap. */
+}
+
+/* Styles for the author section (avatar and info). */
+.post-author {
+    display: flex; /* Enables Flexbox to place avatar and info side-by-side. */
+    gap: 10px; /* Sets space between the small avatar and the text lines. */
+    align-items: center; /* Vertically aligns the avatar and text. */
+}
+
+/* A modifier class to make the avatar smaller. */
+.avatar.small {
+    width: 48px; /* Sets a smaller width. */
+    height: 48px; /* Sets a smaller height. */
+}
+
+/* Styles for the container of the author's text info. */
+.author-info {
+    display: flex; /* Enables Flexbox. */
+    flex-direction: column; /* Stacks the two text lines vertically. */
+    gap: 8px; /* Sets space between the two lines. */
+    width: 150px; /* Gives a fixed width to the author info area. */
+}
+
+/* A modifier class for a full-width text line. */
+.line.full {
+    width: 100%; /* Ensures the line takes up 100% of its container's width. */
+}
+
+/* A modifier class for a shorter text line. */
+.line.short {
+    width: 80%; /* Makes the line take up only 80% of its container's width. */
+}
+
+/* Styles for the container of the action icons. */
+.post-actions {
+    display: flex; /* Enables Flexbox to place icons side-by-side. */
+    gap: 8px; /* Sets the space between the action icons. */
+}
+
+/* Styles for a single action icon. */
+.action-icon {
+    width: 24px; /* Sets a fixed width for the icon. */
+    height: 24px; /* Sets a fixed height, making it a square. */
+    background-color: var(--primary); /* Sets the icon color to white. */
+}
+
+/* Styles for the post title placeholder bar. */
+.post-title-bar {
+    width: 60%; /* Sets the width of the title bar to 60% of the panel. */
+    height: 28px; /* Sets the height of the title bar. */
+    background-color: var(--primary); /* Sets the color to white. */
+}
+
+/* Styles for the main content area placeholder. */
+.post-content-placeholder {
+    width: 100%; /* Makes the content area fill the panel's width. */
+    min-height: 400px; /* Gives it a minimum height to be visible and represent content. */
+    background-color: var(--primary); /* Sets the color to white. */
+}
+
+/* --- Tablet Styles --- */
+/* These styles will apply only when the screen width is 768px or more. */
+@media (min-width: 768px) {
+    .stats-container {
+        flex-direction: row; /* Changes the stats from stacking vertically to being side-by-side. */
+    }
+
+    .stat-item {
+        flex: 1; /* Allows each stat item to grow and share the available space equally. */
+    }
+}
+
+/* --- Desktop Styles --- */
+/* These styles will apply only when the screen width is 1024px or more. */
+@media (min-width: 1024px) {
+    .layout-container {
+        flex-direction: row; /* Changes the main layout from vertical to a side-by-side two-column layout. */
+    }
+
+    .left-panel {
+        flex: 0 0 350px; /* Gives the left panel a fixed width of 350px and prevents it from growing or shrinking. */
+    }
+
+    .right-panel {
+        flex: 1; /* Allows the right panel to grow and take up all the remaining available space. */
+    }
+}
