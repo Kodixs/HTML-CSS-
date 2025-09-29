@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.main {
+    max-width: 1170px;
+    text-align: center;
+    margin: auto;
+    border: 2px solid rgb(179, 18, 18);
+}
+
+.main h1 {
+    color: rgb(255, 174, 13);
+    font-size: 25px;
+}
+
+.banner-section {
+    max-width: 1280px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.BannerItems{
+    flex-basis: 23%; 
+    margin: 1%;
+}
+
+.BannerItems img{
+    width: 100%;
+}
