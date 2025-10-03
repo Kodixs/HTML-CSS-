@@ -1,0 +1,8 @@
+P1. Welcome to JS
+P2. Run on browser,var,input
+P3. Conditional statements
+P4. Data types
+P5. Arrays
+P6. Array operations
+P7. Array - all functions
+P8. functions in js

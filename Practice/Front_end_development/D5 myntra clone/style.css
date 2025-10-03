@@ -1,0 +1,297 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    /* removes underline from links */
+    font-family: sans-serif;
+    list-style-type: none;
+    /* removes bullets/numbers from lists */
+    box-sizing: border-box;
+    /* makes width include padding */
+
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 5px 10px 1px #f7f7f7;
+}
+
+.headerleft {
+    width: 48%;
+    /* background-color: blue; */
+    margin-left: 2PX;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+
+
+}
+
+
+
+.logo img {
+    width: 65px;
+    height: 73px;
+    margin-left: 40px;
+
+}
+
+.left-menu-list ul {
+    display: flex;
+    gap: 35px;
+
+}
+
+.headerleft>.left-menu-list>ul>li>a {
+    color: #2d3144;
+    font-size: 14px;
+    font-weight: bold;
+
+}
+
+
+
+
+.headerright {
+    width: 45%;
+    display: flex;
+    align-items: center;
+    margin-right: 2%;
+    justify-content: space-between;
+}
+
+.headerright form {
+    width: 70%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+
+
+}
+
+.headerright form button {
+    width: 10%;
+    background: transparent;
+    border: none;
+
+
+}
+
+.headerright form input {
+    width: 90%;
+    height: 40px;
+
+    border: none;
+
+
+}
+
+.right-menu-list ul {
+    display: flex;
+    gap: 15px;
+}
+
+.right-menu-list ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+
+}
+
+.right-menu-list ul li b {
+    color: #2f2f2f;
+    font-size: 11.5px;
+    font-weight: bold;
+
+}
+
+form,
+input {
+    background-color: #f5f5f6;
+}
+
+.headerright form i {
+    color: #717288;
+}
+
+.flat {
+    width: 100%;
+    /* allow it to shrink on small screens */
+    max-width: 1270px;
+    /* same limit as other banners */
+    margin: 0 auto;
+    /* center horizontally */
+    padding: 0 2px;
+    /* small spacing inside */
+
+
+
+
+}
+
+.flat img {
+    width: 100%;
+    /* responsive */
+    height: auto;
+    /* maintain ratio */
+    display: block;
+    /* remove inline gap */
+    margin-bottom: 5px;
+
+}
+
+.big-banner {
+    width: 100%;
+    max-width: 1270px;
+    margin: 0 auto;
+    padding: 0 ;
+}
+
+.big-banner img {
+    width: 100%;
+    
+    display: block;  /* removes inline image gap */
+    margin: 0;       /* no top/bottom gap */
+   
+}
+
+.second-banner {
+    width: 100%;
+    max-width: 1270px;
+    margin: 0 auto;
+     padding: 0;   /* remove all padding so it sticks tightly */
+
+
+}
+
+.second-banner .img {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* equal spacing */
+     margin: 0;            /* no gaps */
+   
+  
+    
+}
+
+.second-banner .sponsor {
+    flex: 1;
+    /* each takes equal space */
+    display: flex;
+ 
+   
+
+}
+
+.second-banner .sponsor img {
+    max-width: 100%;
+    /* prevents oversized images */
+    height: auto;
+    display: block;  /* removes inline gap */
+
+
+}
+
+.third-banner{
+    max-width: 1270;
+    padding: 0 38px;
+}
+
+.third-banner img{
+    width: 100%;
+}
+
+.fourth-banner{
+    max-width: 1270;
+    padding: 0 38px;
+}
+
+.fourth-banner img{
+    width: 100%;
+}
+
+.products {
+    max-width: 1270;
+    width: 100%;
+    display: flex;
+    padding: 0 30px;
+    
+}
+
+.products div{
+    flex-basis: 210%;
+
+
+}
+
+.p1 img{
+    margin: 0;
+    padding: 16px 0;
+    display: block;
+    max-width: 200px;
+}
+
+.omg{
+    margin-top:30px ;
+    max-width: 1270;
+    padding: 0 30px;
+}
+
+.omg img{
+    width: 100%;
+}
+
+.offer2{
+    margin-top:30px ;
+    max-width: 1270;
+    padding: 0 30px;
+}
+
+.offer2 img{
+    width: 100%;
+}
+
+.images33 {
+    max-width: 1270px;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* 6 images per row */
+    gap: 15px;  /* spacing between items */
+    justify-items: center; /* center each image */
+    
+}
+
+
+.images33 div {
+    text-align: center;
+}
+
+.images33 img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.images33 div:nth-last-child(3),
+.images33 div:nth-last-child(2),
+.images33 div:nth-last-child(1) {
+    grid-column: span 2; /* each image takes 2 slots, so 3 fill the row */
+}
+
+.more_offer{
+    margin-top:30px ;
+    max-width: 1270;
+    padding: 0 30px;
+}
+
+.more_offer img{
+    width: 100%;
+}
+
+

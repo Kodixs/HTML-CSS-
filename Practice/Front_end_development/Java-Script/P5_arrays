@@ -1,0 +1,12 @@
+let fruits = ["Apple", "Mango", "Banana"];
+console.log(fruits);        // ["Apple", "Mango", "Banana"]
+
+// Access elements
+console.log(fruits[0]);     // Apple
+
+// Change element
+fruits[1] = "Orange";
+console.log(fruits);        // ["Apple", "Orange", "Banana"]
+
+// Length
+console.log(fruits.length); // 3

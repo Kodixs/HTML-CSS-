@@ -1,0 +1,151 @@
+// ===============================
+// 📌 CONDITIONAL STATEMENTS
+// ===============================
+
+// if
+let age = 18;
+if (age >= 18) {
+    console.log("✅ You are an adult");
+}
+
+// if-else
+let number = 5;
+if (number % 2 === 0) {
+    console.log("✅ Even number");
+} else {
+    console.log("✅ Odd number");
+}
+
+// if-else if-else
+let marks = 75;
+if (marks >= 90) {
+    console.log("✅ Grade A");
+} else if (marks >= 60) {
+    console.log("✅ Grade B");
+} else {
+    console.log("✅ Grade C");
+}
+
+// switch
+let day = 3;
+switch (day) {
+    case 1: console.log("✅ Monday"); break;
+    case 2: console.log("✅ Tuesday"); break;
+    case 3: console.log("✅ Wednesday"); break;
+    default: console.log("✅ Other Day");
+}
+
+// ===============================
+// 📌 DATA TYPES
+// ===============================
+let name = "Utkarsh";        // String
+let ageNum = 21;             // Number
+let isStudent = true;        // Boolean
+let city;                    // Undefined
+let car = null;              // Null
+let person = { name: "Utkarsh", age: 21 }; // Object
+let fruits = ["Apple", "Mango", "Banana"]; // Array (special object)
+
+console.log(typeof name);     // string
+console.log(typeof ageNum);   // number
+console.log(typeof isStudent);// boolean
+console.log(typeof city);     // undefined
+console.log(car);             // null
+console.log(typeof person);   // object
+console.log(typeof fruits);   // object
+
+// ===============================
+// 📌 ARRAYS BASIC
+// ===============================
+let colors = ["Red", "Green", "Blue"];
+console.log(colors);          // ["Red", "Green", "Blue"]
+
+// Access & modify
+console.log(colors[0]);       // Red
+colors[1] = "Yellow";         // Change
+console.log(colors);          // ["Red", "Yellow", "Blue"]
+
+// Length
+console.log(colors.length);   // 3
+
+// ===============================
+// 📌 ARRAY OPERATIONS
+// ===============================
+
+// push → add at end
+colors.push("Pink");
+console.log(colors); // ["Red","Yellow","Blue","Pink"]
+
+// pop → remove last
+let last = colors.pop();
+console.log(last);   // Pink
+console.log(colors); // ["Red","Yellow","Blue"]
+
+// shift → remove first
+let first = colors.shift();
+console.log(first);  // Red
+console.log(colors); // ["Yellow","Blue"]
+
+// unshift → add at start
+colors.unshift("Black");
+console.log(colors); // ["Black","Yellow","Blue"]
+
+// ===============================
+// 📌 COMMON ARRAY FUNCTIONS
+// ===============================
+
+let numbers = [10, 20, 30, 40, 50];
+
+// concat → join arrays
+let more = [60, 70];
+let combined = numbers.concat(more);
+console.log(combined); // [10,20,30,40,50,60,70]
+
+// slice → copy part
+let sliced = numbers.slice(1, 4);
+console.log(sliced); // [20,30,40]
+
+// splice → add/remove
+numbers.splice(2, 1, 99); // remove 1 item at index 2 and add 99
+console.log(numbers); // [10,20,99,40,50]
+
+// indexOf → find index
+console.log(numbers.indexOf(99)); // 2
+
+// includes → check existence
+console.log(numbers.includes(40)); // true
+console.log(numbers.includes(100)); // false
+
+// forEach → loop
+numbers.forEach(num => console.log("forEach:", num));
+
+// map → create new array
+let doubled = numbers.map(num => num * 2);
+console.log(doubled); // [20,40,198,80,100]
+
+// filter → condition based new array
+let evens = numbers.filter(num => num % 2 === 0);
+console.log(evens); // [10,20,40,50]
+
+// reduce → reduce to single value
+let sum = numbers.reduce((total, num) => total + num, 0);
+console.log(sum); // 219
+
+
+// Example 1: Flatten 1-level nested array
+let arr1 = [1, [2, 3], [4, 5]];
+let flatArr1 = arr1.flat();
+console.log(flatArr1); 
+// [1, 2, 3, 4, 5]
+
+// Example 2: Flatten 2-level nested array
+let arr2 = [1, [2, [3, 4]], 5];
+let flatArr2 = arr2.flat(2);
+console.log(flatArr2); 
+// [1, 2, 3, 4, 5]
+
+// Example 3: Flatten infinite depth
+let arr3 = [1, [2, [3, [4, [5]]]]];
+let flatArr3 = arr3.flat(Infinity);
+console.log(flatArr3); 
+// [1, 2, 3, 4, 5]
