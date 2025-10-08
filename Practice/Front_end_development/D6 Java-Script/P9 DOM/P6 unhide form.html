@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+
+        .modal{
+            width: 300px;
+            height: 300px;
+            box-shadow: 0px 0px 10px 2px #ccc;
+            position: fixed;
+            top: -50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+             transition: 0.5s;
+        }
+
+        .modal h2{
+            text-align: center;
+            border-bottom: 1px solid #ccc;
+            font-weight: normal;
+            font-size: 20px;
+           
+            padding: 10px 0px;
+            position: relative;
+        }
+
+        .modal h2 span{
+            position: absolute;
+            right: 10px;
+            top: 0;
+            cursor: pointer;
+            font-size: 35px;
+        }
+
+        .showModal{
+            top: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="modal">
+        <h2>Enquiry Adda
+            <span style="width:30px; height:40px; background-color: grey; border-radius: 100%;">&times;</span>
+        </h2>
+    </div>
+    <button>Show Medal</button>
+    <button id="togo">Togo toggle</button>
+
+    
+</body>
+<script>
+    let btn=document.querySelector("button");
+    let modal=document.querySelector(".modal");
+    let closeBtn=document.querySelector(".modal h2 span");
+    btn.addEventListener("click",()=>{
+        modal.classList.add("showModal");
+    })
+
+    closeBtn.addEventListener("click",()=>{
+        modal.classList.remove("showModal");
+    })
+
+    document.querySelector("#togo").addEventListener("click",()=>{
+       modal.classList.toggle("showModal");
+    })
+</script>
+</html>

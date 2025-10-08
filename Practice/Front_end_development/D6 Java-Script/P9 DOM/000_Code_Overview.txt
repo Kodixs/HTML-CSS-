@@ -1,0 +1,9 @@
+P1. Getelementbyid()
+P2. Show and hide password
+P3 document.querySelector
+P4. addEventListener()
+P5. Make a click on box color change
+P6. Hide/unhide psw form
+P7. Make hide/unhide login page
+P8. Traversing the DOM - parentElement,previousElementSibling,
+P9. FA&Q section

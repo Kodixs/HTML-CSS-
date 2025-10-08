@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .main{
+            width: 300px;
+            height: 200px;
+            border: 2px solid black;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1>wolcom</h1>
+        <button>save</button>
+        <p>wiclome to ws
+            <u>blow</u>
+            <i>me</i>
+        </p>
+    </div>
+    
+</body>
+<script>
+    let btn=document.querySelector("button");
+
+    btn.addEventListener("click",()=>{
+   
+        // btn.parentElement.remove();
+        // btn.previousElementSibling.style.color = "yellow";
+        // btn.nextElementSibling.style.color = "red";
+        console.log(btn.nextElementSibling.children)
+
+    })
+</script>
+</html>

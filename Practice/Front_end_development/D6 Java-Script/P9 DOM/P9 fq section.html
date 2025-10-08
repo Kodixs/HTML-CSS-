@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: sans-serif;
+    }
+
+    .fnq {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .faqmid {
+      max-width: 1000px;
+      margin: auto;
+      padding: 50px;
+    }
+
+    .faqitem {
+      border: 1px solid #ccc;
+      margin-bottom: 10px;
+    }
+
+    .faqitem h3 {
+      padding: 15px;
+      position: relative;
+      background-color: maroon;
+      color: white;
+      cursor: pointer;
+    }
+
+    .faqitem h3 span {
+      position: absolute;
+      right: 20px;
+      font-size: 25px;
+      color: white;
+    }
+
+    .faqitem p {
+      padding: 15px;
+      display: none;
+      text-align: justify;
+      line-height: 1.5;
+    }
+
+    .showans {
+      display: block !important;
+    }
+  </style>
+</head>
+
+<body>
+  <h1 class="fnq">Frequently asked questions</h1>
+  <div class="faqmid">
+    <div class="faqitem">
+      <h3>What is a data center? <span>+</span></h3>
+      <p>A data center is a facility with many computers that store and process large amounts of information...</p>
+    </div>
+    <div class="faqitem">
+      <h3>Can I visit a data center? <span>+</span></h3>
+      <p>Because we take security seriously at our data centers, we cannot offer public tours...</p>
+    </div>
+    <div class="faqitem">
+      <h3>What’s it like to work in a data center? <span>+</span></h3>
+      <p>Google data center staff members ensure that each facility’s computers are running at their highest speed...</p>
+    </div>
+    <div class="faqitem">
+      <h3>Can I take photos of the data center? <span>+</span></h3>
+      <p>We’ve done the work for you! Take a look inside Google’s data centers around the world...</p>
+    </div>
+    <div class="faqitem">
+      <h3>I am a member of the press and am interested in data centers. <span>+</span></h3>
+      <p>We thank you for your interest. Please contact our press team at press@google.com.</p>
+    </div>
+  </div>
+
+  <script>
+    let h3tag = document.querySelectorAll(".faqitem h3");
+    let spantag = document.querySelectorAll(".faqitem h3 span");
+
+    h3tag.forEach((item, index) => {
+      item.addEventListener("click", () => {
+
+        // 1️⃣ Close all other answers first
+        h3tag.forEach((heading, i) => {
+          if (index !== i) {
+            heading.nextElementSibling.classList.remove("showans");
+            spantag[i].textContent = "+";
+          }
+        });
+
+        // 2️⃣ Toggle the current one
+        let answer = item.nextElementSibling;
+        answer.classList.toggle("showans");
+
+        // 3️⃣ Change the + / - symbol accordingly
+        if (answer.classList.contains("showans")) {
+          spantag[index].textContent = "-";
+        } else {
+          spantag[index].textContent = "+";
+        }
+      });
+    });
+  </script>
+</body>
+</html>

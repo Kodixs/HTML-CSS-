@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .loginModal {
+
+            width: 30%;
+            height: 100vh;
+            position: fixed;
+            background-color: #ccc;
+            right: -500px;
+            padding: 40px;
+
+        }
+
+        .headingModal {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 70px;
+        }
+
+        .headingModal h3 {
+            font-size: 20px;
+
+        }
+
+        .headingModal p {
+            font-size: 15px;
+
+        }
+
+        .loginModal form {
+            margin-top: 40px;
+        }
+
+        .loginModal form label {
+            display: block;
+        }
+
+        .loginModal form input {
+            width: 100%;
+            height: 40px;
+            margin-top: 10px;
+            padding-left: 10px;
+            font-size: 15px;
+            border-radius: 5px;
+        }
+
+        .loginModal form button {
+            width: 100%;
+            height: 40px;
+            margin-top: 30px;
+            background-color: #194cff;
+            color: white;
+            font-weight: bold;
+            font-size: 15px;
+            letter-spacing: 1px;
+            font-style: normal;
+            border: none;
+            border-radius: 7px;
+            padding: 12px 0;
+
+   
+        }
+
+        .loginModal form p {
+            margin-top: 25px;
+            font-size: 13px;
+            color: gray;
+        }
+
+        .loginModal form p a {
+            text-decoration: none;
+            color: #194cff;
+            font-weight: bold;
+        }
+
+        .headingModal p {
+            color: blue;
+            font-weight: 540;
+        }
+
+        .flo {
+            width: 80px;
+            height: 40px;
+            margin-top: 30px;
+            margin-left: 30px;
+            padding: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            color: rgb(250, 250, 250);
+            background-color: #194cff;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .hide {
+            right: 0;
+
+
+        }
+
+        .loginModal span {
+            font-size: 35px;
+
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="loginModal  ">
+        <span class="cross">&times;</span>
+
+        <div class="headingModal">
+            <h3>Login</h3>
+            <p>Use email, instead</p>
+        </div>
+        <form action="">
+            <label for="">Mobile Number &#42;</label>
+            <input type="text" placeholder="Enter Mobile Number">
+            <button>Login</button>
+            <p>Don't have an account? <a href="#">Create an account</a></p>
+        </form>
+    </div>
+
+    <button class="flo">Login</button>
+
+</body>
+<script>
+    let flo = document.querySelector('.flo');
+    let loginModal = document.querySelector('.loginModal');
+    let hide = document.querySelector('.hide');
+    let cross = document.querySelector('.cross');
+
+    flo.addEventListener('click', () => {
+        loginModal.classList.add('hide');
+    })
+
+    cross.addEventListener('click', () => {
+        loginModal.classList.remove('hide');
+    })
+</script>
+
+</html>
