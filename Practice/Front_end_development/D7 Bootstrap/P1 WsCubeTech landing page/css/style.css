@@ -1,0 +1,105 @@
+*{
+     font-family: "Inter", sans-serif;
+}
+
+.whatsappbtn{
+    border: 1px solid #27AE60;
+    padding: 10px 18px;
+    color: #27AE60;
+}
+.whatsappbtn i{
+    color: #27AE60;
+    
+}
+
+
+.whatsappbtn:hover{
+    border: 1px solid #27AE60;
+}
+
+.call{
+   background:linear-gradient(to right, #0ACEFE, #2699FB);
+     padding: 10px 18px;
+    color: white;
+}
+
+.banner-content h1{
+ font-size: 52px;
+ font-weight: 700;
+}
+
+.banner-content p{
+    font-size: 24px;
+}
+.banner-content ul{
+    list-style: none;
+}
+
+
+
+.banner-content h1 span{
+    color: #2699FB;
+   background: url(../images/blue\ strip\ bottom\ border.svg) no-repeat bottom;
+}
+
+.banner-content ul li{
+
+    font-size: 22px;
+}
+.banner-content ul i{
+
+    color: #2699FB;
+}
+
+.bannerContentBtn {
+  display: flex;
+  gap: 1rem;
+}
+
+.bannerContentBtn button {
+  width: 50%;
+  padding: 10px 0;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  transition: 0.3s ease;
+}
+
+/* First Button */
+.bannerContentBtn button:first-child {
+  background: linear-gradient(to right, #0ACEFE, #2699FB);
+  color: white;
+  border: none;
+}
+
+/* Second Button */
+.bannerContentBtn button:nth-child(2) {
+  background-color: white;
+  color: #333;
+}
+
+.bannerContentBtn button:nth-child(2) i {
+  margin-right: 8px;
+}
+
+/* Optional hover effects */
+.bannerContentBtn button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.banner-form{
+    padding: 40px;
+   
+}
+.banner-form h3{
+   font-size: 18px;
+}
+
+.yo{
+    padding: 20px;
+}
+
+.jo{
+    background: linear-gradient(to right, #0ACEFE, #2699FB);
+    color: white;
+}
